@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand"  id="navbar_text">Keep Your Notes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="ul">
+            <li class="nav-item">
+                
+            </li>
+            <li>
+            <h6 class="nav-link active" aria-current="page" href="" id="home_text">YOUR NOTES</h6>
+        </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2 hide"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            / id="search_input">
+            <button class="btn btn-outline-success hide" type="submit" id="search_text">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-3 alignment" id="first_container">
+        <h3 style="text-transform: capitalize; margin-top: 100px" id="add_your_notes_here">ADD your notes here</h3>
+        <div class="container-fluid">
+            <button type="button" class="btn btn-info" id="add_notes" >Add A note</button>
+            <button type="button" class="btn btn-info" id="show_notes">Show Notes</button>
+
+            <div class="card my-3 hide transparentandcolor" id="anotherdiv">
+
+                <div class="card-body transparentandcolor">
+                  <h5 class="card-title" id="note_title">Write Note</h5>
+                  
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="user_area" rows="3"></textarea>
+                  </div>
+                 
+                  <div class="alignment">
+                  <button href="" class="btn btn-primary my-3" id="btn_back">BACK</button>
+                  <button href="" class="btn btn-primary my-3" id="btn_save">SAVE</button>
+                </div>
+                <!-- LOader -->
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border hide" role="status" id="loader">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="cotainer my-3 hide" id="all_notes">
+    
+    <h3 class="alignment transparentandcolor"> Your NOtes</h3><hr>
+    
+    <div class="container-fluid" id="note_cards">
+        <div class="card singlecard" id="singlecard">
+        </div>
+        
+        
+        <div class="alignment">
+            <button href="" class="btn btn-primary my-3 " id="btn_back_two">BACK</button>
+        </div><hr>
+    </div>
+    
+    
+    
+    
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    
+    
+    <script src="index.js"></script>
+  </body>
+</html>
